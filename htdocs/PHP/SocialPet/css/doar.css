@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.texto-doar{
+    width: 1020px;
+    font-size: 40px;
+    font-weight: 500;  
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.doar-central{
+    width: 100%;
+    max-width: 1220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+.esquerda-input{
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    align-items: flex-start;
+}
+.txt-input{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+input{
+    width: 450px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #888;
+}
+input[type="file"]{
+    padding-left: 0;
+    border: none;
+    height: 40px;
+}
+select{
+    width: 450px;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.direita-input{
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    align-items: flex-start;
+}
+.formulario form{
+    display: flex;
+    width: 1220px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.btn-enviar{
+    height: 45px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #ee4a25;
+    box-shadow: none;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+.btn-enviar:hover{
+    transition: 0.5s;
+    color: #fff;
+    background-color: #cf3817;
+}
+@media (max-width:1050px) {
+    .texto-doar{        
+        width: 100%;
+        text-align: center;
+    }
+    .formulario form{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .esquerda-input{
+        width: unset;
+    }
+    .direita-input{
+        width: unset;
+    }
+    input{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    select{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    textarea{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .txt-input{
+        margin-left: 20px;
+    }
+}

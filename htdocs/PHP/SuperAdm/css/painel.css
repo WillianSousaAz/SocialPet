@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    -webkit-animation: fadeIn 0.8s ease-in-out;
+    -moz-animation: fadeIn 0.8s ease-in-out;
+    -o-animation: fadeIn 0.8s ease-in-out;
+    animation: fadeIn 0.8s ease-in-out;
+}
+.painel{
+    background: rgba( 255, 255, 255, 0.88 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 90%;
+    height: 900px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.div_1,
+.div_2,
+.div_3,
+.div_4{
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.div_1{
+    width: 71%;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    padding-left: 60px;
+}
+.cor_alter{
+    color: #dd7732;
+}
+.div_2{
+    width: 15%;
+    justify-content: flex-end;
+    font-size: 25px;
+}
+.div_3{
+    width: 7%;
+    justify-content: center;
+}
+.div_4{
+    width: 7%;
+    justify-content: center;
+}
+.icon{
+    width: 40px;
+    cursor: pointer;
+}
+.btn_power{
+    font-size: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn_power:hover{
+    color: red;
+    transition: 0.3s;
+}
+.navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.central-caixas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+.caixas-home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.caixa-home{
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #444;
+}
+.caixa-home:hover{
+    box-shadow: 5px 20px 32px 0 rgba( 31, 38, 135, 0.37 );
+    margin-top: -5px;
+    transition: 0.3s;
+}
+.emoji{
+    margin-bottom: 70px;
+    width: 150px;
+}
+
+/************* Centralização ************/
+
+.central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+.card_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    background: rgba( 255, 255, 255, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 700px;
+    overflow: auto;
+}
+.name_bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.contudo_repeat{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+.content{
+    height: 660px;
+}
+.control{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control_id{
+    width: 10% !important;
+}
+.control_text{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.remove{
+    font-size: 20px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+}
+.remove:hover{
+    color: red;
+}
